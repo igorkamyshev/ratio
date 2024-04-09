@@ -1,0 +1,26 @@
+{
+  "name": "ratio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.0.1",
+    "autoprefixer": "^10.4.16",
+    "flowbite": "^2.3.0",
+    "flowbite-svelte": "^0.44.24",
+    "postcss": "^8.4.32",
+    "postcss-load-config": "^5.0.2",
+    "svelte": "^4.2.12",
+    "tailwindcss": "^3.3.6",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "effector": "^23.2.0",
+    "patronum": "^2.2.0"
+  }
+}

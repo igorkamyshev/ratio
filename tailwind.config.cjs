@@ -4,6 +4,8 @@ const config = {
     "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}",
   ],
 
+  darkMode: 'media',
+
   plugins: [require("flowbite/plugin")],
 
   theme: {

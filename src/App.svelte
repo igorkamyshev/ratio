@@ -20,8 +20,9 @@
 
   <div class="grid gap-6 md:grid-cols-2 mb-10">
     <div>
-      <Label for="coffeeInGrams" class="mb-2">Грамм зерен</Label>
+      <Label for="coffeeInGrams" class="mb-2 text-lg">Грамм зерен</Label>
       <Input
+        class="text-lg"
         type="number"
         id="coffeeInGrams"
         value={$coffeeInGramsView$}
@@ -29,8 +30,9 @@
       />
     </div>
     <div>
-      <Label for="waterInGrams" class="mb-2">Грамм воды</Label>
+      <Label for="waterInGrams" class="mb-2 text-lg">Грамм воды</Label>
       <Input
+        class="text-lg"
         type="number"
         id="waterInGrams"
         value={$waterInGramsView$}
@@ -41,7 +43,7 @@
 
   <Hr />
 
-  <Alert color="blue" class="mb-6"
+  <Alert color="blue" class="mb-6 text-lg"
     ><span class="font-medium">Настройки</span>
     используются для расчетов. Если не понимаешь, что это такое, то просто игнорируй
     — по умолчанию все настроено правильно. Менять нужно только если ты знаешь, что
@@ -50,8 +52,11 @@
 
   <div class="grid gap-6 md:grid-cols-2">
     <div>
-      <Label for="gramOnLiter" class="mb-2">Грамм зерен на литр воды</Label>
+      <Label for="gramOnLiter" class="mb-2 text-lg"
+        >Грамм зерен на литр воды</Label
+      >
       <Input
+        class="text-lg"
         type="number"
         id="gramOnLiter"
         value={$gramOnLiterView$}
@@ -59,9 +64,10 @@
       />
     </div>
     <div>
-      <Label class="mb-2">Соотношение</Label>
+      <Label class="mb-2 text-lg">Соотношение</Label>
       <div class="flex gap-2 items-center">
         <Input
+          class="text-lg"
           type="number"
           id="ratioTop"
           value={$ratioTopView$}
@@ -70,6 +76,7 @@
         />
         <span> / </span>
         <Input
+          class="text-lg"
           type="number"
           id="rationBottom"
           value={$ratioBottomView$}

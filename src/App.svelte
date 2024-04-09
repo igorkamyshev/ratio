@@ -1,4 +1,6 @@
 <script>
+  import { Input, Label, Heading, Hr, Alert } from "flowbite-svelte";
+
   import {
     gramOnLiterView$,
     ratioTopView$,
@@ -11,11 +13,9 @@
     onChangeCoffeeInGrams,
     onChangeWaterInGrams,
   } from "./view-model";
-
-  import { Input, Label, Heading, Hr } from "flowbite-svelte";
 </script>
 
-<main>
+<main class="container mx-auto max-w-screen-sm">
   <Heading class="mb-10">Coffee Ratio</Heading>
 
   <div class="grid gap-6 md:grid-cols-2 mb-10">
@@ -40,6 +40,13 @@
   </div>
 
   <Hr />
+
+  <Alert color="blue" class="mb-6"
+    ><span class="font-medium">Настройки</span>
+    используются для расчетов. Если не понимаешь, что это такое, то просто игнорируй
+    — по умолчанию все настроено правильно. Менять нужно только если ты знаешь, что
+    делаешь.
+  </Alert>
 
   <div class="grid gap-6 md:grid-cols-2">
     <div>

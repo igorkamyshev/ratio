@@ -1,4 +1,4 @@
-import { combine } from "effector";
+import { combine, createEvent, sample } from "effector";
 
 import {
   coffeeInGrams$,
@@ -12,8 +12,6 @@ import {
   changeCoffeeInGrams,
   changeWaterInGrams,
 } from "./model";
-import { createEvent } from "effector";
-import { sample } from "effector";
 
 export const gramOnLiterView$ = combine(gramOnLiter$, Math.round);
 export const ratioTopView$ = combine(ratioTop$, Math.round);
